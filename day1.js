@@ -24,3 +24,8 @@ console.log(st1);
 console.log(st1.endsWith("Chiku"));
 console.log(st1.endsWith("u"));
 console.log(st2.slice(0,4));
+
+var n1=10;
+var n2=15;
+
+(n1>n2)? (console.log(n1)):(console.log(n2));

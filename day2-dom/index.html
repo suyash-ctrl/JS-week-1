@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Day1-DOM </title>
+</head>
+
+<body>
+  <p id="message">Hello world</p>
+  <p class="gege">My name is nothing</p>
+  <p class="gege">My name is nothing</p>
+
+  <div id="first">
+    <h1 class="gege" id="this" >i dont think so</h1>
+    <h2 class= "gege" >I think so</h2>
+  </div>
+</body>
+
+<script>
+  let try1=document.getElementById("message");
+  console.log(try1);
+
+  let try2=document.getElementsByClassName("gege");
+  console.log(try2);
+
+  let try3=first.getElementsByClassName("gege");
+  console.log(try3);
+
+  let try4=document.querySelector(".gege");
+  console.log(try4);
+
+  let try5=document.querySelectorAll(".gege");
+  console.log(try5);
+
+  let try6=first.querySelectorAll("#this");
+  console.log(try6);
+
+  let try7=document.querySelectorAll("div");
+  console.log(try7);
+</script>
+
+</html>

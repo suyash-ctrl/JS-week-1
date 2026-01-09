@@ -18,24 +18,36 @@
 
         <p id="output"></p>
     </div>
+
+    <div>
+        <p id="final" color="green">This text will change boi</p>
+        <button id="try" onclick="change()">Click here to change the text</button>
+    </div>
 </body>
 <script>
     
     function changetext(){ 
         let para=document.getElementById("text");   //ths creates a para object
-        para.textContent="Pallavi";                 //textContent changes the texts
+        para.textContent="Shivesh";                 //textContent changes the texts
     }
 
     function changecolor(){
         let para1=document.getElementById("col");
-        para1.style.color="red";                    //style.color changes the color
+        para1.style.color="red";                             //style.color changes the color
     }
 
     function readvalue(){
         let para2=document.getElementById("in");
         let para3=document.getElementById("output");
 
-        para3.textContent="Your name is " + para2.value;    //.value is used to read the input.
+        para3.textContent="Your name is " + para2.value;    //.value is used to access the input.
+        para2.value=""                                      //clears the input 
+    }
+
+    function change(){
+        let para4=document.getElementById("final");
+        para4.textContent="Now singing bling bang born!!!!"
+        para4.style.color="pink";
     }
 </script>
 </html>

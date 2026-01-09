@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text"> Suyash </p>
+    <button onclick="changetext()">Change the text</button> <!--onclick, changetext is called-->
+
+    <p id="col" color="yellow">Press the button hehe</p>
+    <button onclick="changecolor()">Press Me!</button>
+
+    <div>
+        <input id="in" placeholder="Enter your name?">
+        <button onclick="readvalue()"> Submit</button>
+
+        <p id="output"></p>
+    </div>
+</body>
+<script>
+    
+    function changetext(){ 
+        let para=document.getElementById("text");   //ths creates a para object
+        para.textContent="Pallavi";                 //textContent changes the texts
+    }
+
+    function changecolor(){
+        let para1=document.getElementById("col");
+        para1.style.color="red";                    //style.color changes the color
+    }
+
+    function readvalue(){
+        let para2=document.getElementById("in");
+        let para3=document.getElementById("output");
+
+        para3.textContent="Your name is " + para2.value;    //.value is used to read the input.
+    }
+</script>
+</html>

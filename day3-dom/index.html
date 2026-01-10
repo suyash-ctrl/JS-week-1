@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Day3</title>
+</head>
+
+<body>
+    <div id ="x">
+        <p id="name">My name is Suyash </p>
+        <button id="col">Change color!</button>
+        <br>
+        <button id="btn">CLick here!</button>
+        <p class="input"></p>
+    </div>
+    
+</body>
+
+<script>
+    let name=document.getElementById("name");
+    let col=document.getElementById("col");
+    col.addEventListener("click", () => {
+        if(name.style.color==="yellow"){
+            name.style.color='red';
+        }
+        else{
+            name.style.color='yellow';
+        }
+    })
+
+    let btn=document.getElementById("btn");
+    let input=document.querySelector(".input");
+    let i=1;
+    btn.addEventListener("click", ()=> {
+        console.log('I am clicked.');
+        input.textContent = "I am clicked " + i + " times";
+        i++;
+    })
+</script>
+</html>

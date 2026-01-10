@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Toggle text</h2>
+        <p id="one" style="font-size:20px">I am practicing JS</p>
+        <button id="btn1" style="font-size:20px">Toggle text!</button>
+
+        <h2>Click Counter</h2>
+        <button id="btn2" style="font-size: 20px;">Count Clicks</button>
+        <p id="p1"></p>
+        
+        <h2>El display</h2>
+        <p id="p2">Click the button to vanish this!</p>
+        <button id="btn3"> CLick here. </button>
+
+        <h2>read input</h2>
+        <input id="input" placeholder="Write whatever you want" style="font-size: 20px;">
+        <br><br>
+        <button id="btn4">Save the info</button>
+        <p id="p3"></p>
+
+        <</h2>
+    </div>
+</body>
+
+<script>
+    let one=document.getElementById("one");
+    let btn1=document.getElementById("btn1");
+    btn1.addEventListener("click", ()=>{
+        if (one.textContent=="I am practicing JS"){
+        one.textContent="I am not wasting my time!!"}
+        else{
+            one.textContent="I am practicing JS"
+
+        }
+    })
+
+    let btn2=document.getElementById("btn2");
+    let p1=document.getElementById("p1");
+    let i=1;
+    btn2.addEventListener("click", ()=>{
+        p1.textContent="I am clicked "+i+" times.";
+        i++;
+    })
+
+    let btn3=document.getElementById("btn3");
+    let p2=document.getElementById("p2");
+    btn3.addEventListener("click", ()=>
+    {
+        if (p2.textContent==""){
+            p2.textContent="Click the button to vanish this!"
+        }
+        else{
+            p2.textContent="";
+        }
+    })
+
+    let input=document.getElementById("input");
+    let p3=document.getElementById("p3");
+     let btn4=document.getElementById("btn4");
+    btn4.addEventListener("click", ()=>{
+        p3.textContent=input.value;
+    })
+    
+</script>
+</html>
